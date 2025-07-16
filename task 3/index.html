@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Quiz & Jokes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎯 Interactive Learning Hub</h1>
+    <nav>
+      <button onclick="switchTab('quiz')">Quiz</button>
+      <button onclick="switchTab('api')">Jokes</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quiz Section -->
+    <section id="quiz" class="tab">
+      <h2>🧠 Test Your JavaScript Knowledge</h2>
+      <div class="question" id="question"></div>
+      <div id="answers" class="answers"></div>
+      <p id="quiz-feedback"></p>
+      <button class="next-btn" onclick="nextQuestion()">Next Question</button>
+    </section>
+
+    <!-- API Section -->
+    <section id="api" class="tab hidden">
+      <h2>😂 Random Joke Generator</h2>
+      <button class="joke-btn" onclick="fetchJoke()">Tell Me a Joke</button>
+      <p id="joke" class="joke-box">Click to get a laugh!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌈 Made with HTML, CSS & JavaScript | © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
